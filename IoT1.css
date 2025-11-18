@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #0D1117;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.hotspot-icon {
+  width: 40px;
+  background-color: rgb(5, 222, 238);
+  border-radius: 6px;
+}
+
+.heading h2 {
+  color: #fff;
+  font-size: 26px;
+}
+
+.heading h3 {
+  color: #8892B0;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+/* VIDEO */
+video {
+  width: 90%;
+  max-width: 420px;
+  background-color: #111827;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 30vh;
+}
+
+/* CONTAINER */
+.contain {
+  width: 90%;
+  max-width: 420px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.battery, 
+.volume,
+.speed-contain,
+.wifi {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #6e7074;
+}
+
+.battery-icon, .volume-icon, .speed-icon, .wifi-icon {
+  width: 30px;
+}
+
+h3{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+/* SPEED SLIDER */
+.speed-control {
+  width: 90%;
+  max-width: 420px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speed-control p {
+  color: #AAB2C8;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.speed-control input {
+  width: 100%;
+  accent-color: #4DA3FF;
+}
+
+#speed-labels {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #ced6e4;
+  margin-top: 3px;
+}
+
+/* MOVEMENT CONTROL */
+.movement-control {
+  width: 90%;
+  max-width: 420px;
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.control {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+button {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #2C2F35;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.3s;
+  margin: 3px;
+}
+
+button:hover {
+  background-color: #4DA3FF;
+}
